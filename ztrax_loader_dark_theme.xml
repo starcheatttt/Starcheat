@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cyberpunk_background"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- Neon Header -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp">
+
+            <!-- Neon Glow Background -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:background="@drawable/neon_glow_bg"
+                android:alpha="0.3"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="24dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!-- Hexagon Icon Container -->
+                <FrameLayout
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginBottom="16dp">
+
+                    <!-- Hexagon Background -->
+                    <View
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:background="@drawable/hexagon_neon"
+                        android:alpha="0.8"/>
+
+                    <!-- Game Icon -->
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/game_icon"
+                        android:contentDescription="Game Icon"
+                        android:tint="#00FFFF"/>
+                </FrameLayout>
+
+                <!-- Glitch-style Title -->
+                <TextView
+                    android:text="ZTRAX"
+                    android:textSize="32sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_marginBottom="4dp"
+                    android:textColor="#00FFFF"
+                    android:letterSpacing="0.2"
+                    android:fontFamily="monospace"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:shadowColor="#FF00FF"
+                    android:shadowDx="2"
+                    android:shadowDy="2"
+                    android:shadowRadius="4"/>
+
+                <TextView
+                    android:text="LOADER"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_marginBottom="8dp"
+                    android:textColor="#FF00FF"
+                    android:letterSpacing="0.3"
+                    android:fontFamily="monospace"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <!-- Cyber Subtitle -->
+                <TextView
+                    android:text=">>> NEURAL_INTERFACE_ACTIVE <<<"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:textColor="#00FF00"
+                    android:fontFamily="monospace"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </FrameLayout>
+
+        <!-- Cyber Info Grid -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="20dp">
+
+            <!-- Version Terminal -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/terminal_bg"
+                android:padding="12dp"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:text="$ system --version"
+                    android:textColor="#00FF00"
+                    android:textSize="12sp"
+                    android:fontFamily="monospace"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp">
+
+                    <TextView
+                        android:text="VERSION: "
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp"
+                        android:fontFamily="monospace"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:text="[3.9.0]"
+                        android:textColor="#00FFFF"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:fontFamily="monospace"
+                        android:background="@drawable/neon_cyan_border"
+                        android:padding="4dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Features Terminal -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/terminal_bg"
+                android:padding="12dp"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:text="$ load --modules"
+                    android:textColor="#00FF00"
+                    android:textSize="12sp"
+                    android:fontFamily="monospace"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp">
+
+                    <TextView
+                        android:text="MODULES: "
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp"
+                        android:fontFamily="monospace"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:text="[AIMBOT + TRACK]"
+                        android:textColor="#FF00FF"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:fontFamily="monospace"
+                        android:background="@drawable/neon_pink_border"
+                        android:padding="4dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Security Terminal -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/terminal_bg"
+                android:padding="12dp"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:text="$ security --status"
+                    android:textColor="#00FF00"
+                    android:textSize="12sp"
+                    android:fontFamily="monospace"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp">
+
+                    <TextView
+                        android:text="STATUS: "
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp"
+                        android:fontFamily="monospace"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:text="[SECURED]"
+                        android:textColor="#00FF00"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:fontFamily="monospace"
+                        android:background="@drawable/neon_green_border"
+                        android:padding="4dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Console Output -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/console_bg"
+            android:padding="16dp"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:text=">>> SYSTEM CONSOLE <<<"
+                android:textColor="#00FFFF"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:layout_marginBottom="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/container"
+                android:text="[INFO] Initializing neural pathways...\n[WARN] Bypassing security protocols...\n[OK] System ready for launch"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                android:fontFamily="monospace"
+                android:layout_marginBottom="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <!-- ASCII Progress Bar -->
+            <TextView
+                android:text="[████████░░] 80% COMPLETE"
+                android:textColor="#00FF00"
+                android:textSize="14sp"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:layout_marginBottom="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <!-- Lottie Animation -->
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/loadingAnim"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:visibility="visible"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/loading_anim"/>
+        </LinearLayout>
+
+        <!-- Cyber Launch Button -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+
+            <!-- Button Glow Effect -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/button_glow"
+                android:alpha="0.5"/>
+
+            <!-- Main Button -->
+            <Button
+                android:id="@+id/playButton"
+                android:text=">>> EXECUTE PROTOCOL <<<"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@drawable/cyber_button"
+                android:textColor="#000000"
+                android:fontFamily="monospace"
+                android:letterSpacing="0.1"/>
+        </FrameLayout>
+
+        <!-- Status Indicators -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center">
+
+            <TextView
+                android:text="⬡ NEURAL_LINK"
+                android:textColor="#00FFFF"
+                android:textSize="10sp"
+                android:fontFamily="monospace"
+                android:layout_marginEnd="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="⬢ STEALTH_MODE"
+                android:textColor="#00FF00"
+                android:textSize="10sp"
+                android:fontFamily="monospace"
+                android:layout_marginEnd="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="⬣ QUANTUM_CORE"
+                android:textColor="#FF00FF"
+                android:textSize="10sp"
+                android:fontFamily="monospace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <!-- Header Section with Floating Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="12dp"
+            android:backgroundTint="#1A1A2E">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="24dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!-- Glowing Game Icon with Ring -->
+                <FrameLayout
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_marginBottom="16dp">
+
+                    <!-- Glow Ring -->
+                    <View
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:background="@drawable/glow_ring"
+                        android:alpha="0.6"/>
+
+                    <!-- Game Icon -->
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/game_icon"
+                        android:contentDescription="Game Icon"
+                        android:scaleType="centerCrop"/>
+                </FrameLayout>
+
+                <!-- Modern Title with Gradient Text Effect -->
+                <TextView
+                    android:text="ZTRAX LOADER"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_marginBottom="8dp"
+                    android:textColor="#FFFFFF"
+                    android:letterSpacing="0.1"
+                    android:fontFamily="@font/roboto_bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <!-- Subtitle -->
+                <TextView
+                    android:text="Advanced Gaming Enhancement"
+                    android:textSize="14sp"
+                    android:gravity="center"
+                    android:layout_marginBottom="16dp"
+                    android:textColor="#B0BEC5"
+                    android:alpha="0.8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Feature Cards Grid -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="24dp">
+
+            <!-- Version Card -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="8dp"
+                android:backgroundTint="#16213E">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_version"
+                        android:layout_marginEnd="16dp"
+                        android:tint="#4FC3F7"/>
+
+                    <TextView
+                        android:text="Version"
+                        android:textColor="#E0E6ED"
+                        android:textSize="16sp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:text="3.9.0"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:background="@drawable/badge_orange"
+                        android:padding="8dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Hack Support Card -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="8dp"
+                android:backgroundTint="#16213E">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_features"
+                        android:layout_marginEnd="16dp"
+                        android:tint="#AB47BC"/>
+
+                    <TextView
+                        android:text="Features"
+                        android:textColor="#E0E6ED"
+                        android:textSize="16sp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:text="Bullet-Track + Aimbot"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:background="@drawable/badge_purple"
+                        android:padding="8dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Status Card -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="8dp"
+                android:backgroundTint="#16213E">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_shield"
+                        android:layout_marginEnd="16dp"
+                        android:tint="#4CAF50"/>
+
+                    <TextView
+                        android:text="Security Status"
+                        android:textColor="#E0E6ED"
+                        android:textSize="16sp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:text="SAFE"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:background="@drawable/badge_green"
+                        android:padding="8dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <!-- Status Section -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="8dp"
+            android:backgroundTint="#1A1A2E">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!-- Status Text -->
+                <TextView
+                    android:id="@+id/container"
+                    android:text="Preparing System..."
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_marginBottom="16dp"
+                    android:textColor="#FFFFFF"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <!-- Progress Bar -->
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:layout_marginBottom="16dp"
+                    android:progressTint="#4FC3F7"
+                    android:progressBackgroundTint="#2D3748"
+                    android:progress="75"/>
+
+                <!-- Lottie Loading Animation -->
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/loadingAnim"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:visibility="visible"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/loading_anim"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Enhanced Play Button -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp">
+
+            <!-- Button Shadow -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/button_shadow"
+                android:alpha="0.3"/>
+
+            <!-- Main Button -->
+            <Button
+                android:id="@+id/playButton"
+                android:text="🚀 LAUNCH GAME"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:background="@drawable/btn_gradient_primary"
+                android:textColor="#FFFFFF"
+                android:letterSpacing="0.05"
+                android:elevation="8dp"/>
+        </FrameLayout>
+
+        <!-- Additional Info Section -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:gravity="center">
+
+            <TextView
+                android:text="⚡ Enhanced Performance"
+                android:textColor="#4FC3F7"
+                android:textSize="12sp"
+                android:layout_marginEnd="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="🛡️ Anti-Detection"
+                android:textColor="#4CAF50"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
